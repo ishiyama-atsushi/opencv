@@ -7,9 +7,9 @@
 ## 環境
 - anacondaで仮想環境を作成
 python 3.6
-,,,
+```
 
 conda install -c conda-forge opencv
-,,,
+```
 
 上記のコードでoponcvをインストール
