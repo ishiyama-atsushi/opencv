@@ -2,10 +2,10 @@ import os
 import cv2
 
 # 特徴量ファイルをもとに分類器を作成
-#classifier = cv2.CascadeClassifier('lbpcascade_animeface.xml')#アニメの時はこっち
-classifier = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+classifier = cv2.CascadeClassifier('lbpcascade_animeface.xml')#アニメの時はこっち
+#classifier = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")#実際の顔の時はこっち
 # 顔の検出
-image = cv2.imread('Lenna.jpg')
+image = cv2.imread('./samples/320.jpg')
 # グレースケールで処理を高速化
 gray_image = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
 faces = classifier.detectMultiScale(gray_image)
